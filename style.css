@@ -1,0 +1,426 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Teko&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+:root {
+  --color-one: #C5283D;
+}
+body {
+  overflow-x: hidden;
+}
+.intro {
+  width: 100%;
+ height: 30rem;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.job-title {
+  padding: 2rem 0 0 0;
+  font-size: 10rem;
+  opacity: 0.08;
+  width: 80%;
+  font-family: 'Montserrat', sans-serif;
+  font-style: italic;
+  transform: translate(10%, 10%);
+  transition: all 0.5s ease-in-out;
+}
+.name {
+  padding-top: 10rem;
+  font-size: 8rem;
+  width: 30%;
+  transform: translate(180%, -90%);
+  font-family: 'Josefin Sans', sans-serif;
+  transition: all 0.5s ease-in-out;
+}
+.name span {
+  color: var(--color-one);
+}
+.nav-bar {
+  background-color: white;
+  z-index: 11;
+  transition: all 0.5s ease;
+}
+.nav-bar nav {
+  width: 80%;
+  background-color: white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  transition: all 0.5s ease;
+}
+.nav-bar nav a {
+  padding: 1rem;
+  text-decoration: none;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.5rem;
+  color: black;
+  transition: all 0.5s ease;
+}
+.sticky {
+  width: 100%;
+  position: fixed;
+  transition: all 0.5s ease;
+  box-shadow: 0 11px 10px -11px #000;
+}
+.buttons {
+  display: flex;
+  flex-direction: row;
+  z-index: 10;
+  width: 100%;
+  padding: 5rem;
+}
+.cv {
+  background-color: black;
+  color: white;
+  font-family: 'Teko', sans-serif;
+  border: none;
+  border-radius: 3px;
+  outline: none;
+  width: 20rem;
+  line-height: 3rem;
+  font-size: 1.5rem;
+  letter-spacing: 0.1rem;
+  margin-right: 2rem;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+.more {
+  border: none;
+  background-color: black;
+  color: white;
+  border-radius: 3px;
+  text-align: center;
+  font-size: 1.5rem;
+  width: 15rem;
+  line-height: 3rem;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+.more:hover, .cv:hover {
+  background-color: var(--color-one);
+}
+.top {
+  display: none;
+  border:none;
+  outline:none;
+  background-color: black;
+  color: white;
+  padding: 0.5rem;
+  width: 10rem;
+  z-index: 49;
+  position: fixed;
+  bottom: 1rem;
+  right: 1.5rem;
+  border-radius: 3px;
+  transition: all 0.5s ease;
+  font-family: "Teko", cursive;
+  font-size: 1.5rem;
+}
+.top:hover {
+  background-color: var(--color-one);
+  color: white;
+  transition: all 0.5s ease;
+}
+#about, #skills, #education, #work, #contact{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#skills {
+  font-size: 2rem;
+  transform: translateY(40%);
+  transition: all 0.5s ease-in-out;
+  margin-bottom: 10rem;
+}
+.about-me, .skill, .education, .work {
+  font-family: 'Montserrat', sans-serif;
+  opacity: 0.08;
+  font-size: 12em;
+  font-style: italic;
+  transform: translateY(50%);
+  transition: all 0.5s ease-in-out;
+  padding-right: 2rem;
+}
+.about-body {
+  font-family: 'Lato', sans-serif;
+  font-size: 1.5rem;
+  width: 60%;
+  padding-bottom: 2rem;
+  letter-spacing: 0.2rem;
+  line-height: 3rem;
+  transition: all 0.5s ease-in-out;
+}
+.skill-hover {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  transition: all 0.5s ease-in-out;
+}
+.technical {
+  font-family: 'Lato', sans-serif;
+  font-weight: bold;
+  width: 90%;
+  text-align: center;
+  font-size: 2rem;
+  text-transform: uppercase;
+  transform: translateY(-130%);
+  margin-bottom: 2rem;
+  letter-spacing: 0.5rem;
+}
+.relevant {
+  font-family: 'Lato', sans-serif;
+  width: 90%;
+  font-weight: bold;
+  text-align: center;
+  font-size: 2rem;
+  transform: translateY(-100%);
+  text-transform: uppercase;
+  letter-spacing: 0.5rem;
+  padding-top: 2rem;
+  border-top: 1px solid;
+  border-image: linear-gradient(to right, transparent, black, transparent) 1;
+}
+.technical ul, .relevant ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  list-style-type: none;
+  padding-top: 3rem;
+}
+.technical ul li, .relevant ul li{
+  font-size: 2rem;
+  font-family: 'Teko', sans-serif;
+  font-weight: 300;
+  letter-spacing: 0.2rem;
+}
+.technical ul li i, .relevant ul li i{
+  font-size: 4rem;
+  padding-bottom: 2rem;
+}
+.technical ul li img {
+  width: 3.5rem;
+  height: 3.5rem;
+  object-fit: contain;
+  margin-bottom: 2rem;
+}
+#html {
+  color: #e34c26;
+}
+#css {
+  color: #264de4;
+}
+#js {
+  color: #f0db4f;
+}
+#bug {
+  color: #691E06;
+}
+#mobile {
+  color: #C8C6AF;
+}
+#learn {
+  color: #5DA271;
+}
+.education {
+  transform: translateY(80%);
+  transition: all 0.5s ease;
+}
+.education-details {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  width: 100%;
+  transform: translateY(30%);
+  transition: all 0.5s ease;
+}
+.ug, .inter, .school {
+  width: 33%;
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  padding: 1rem;
+}
+.ug, .inter {
+  border-right: 1px solid;
+  border-image: linear-gradient(to bottom, transparent, black, transparent) 1;
+}
+.ug h1 {
+  padding-bottom: 2.5rem;
+  font-family: "poppins",cursive;
+  letter-spacing: 0.3rem;
+}
+.inter h1 {
+  padding-bottom: 2rem;
+  font-family: "poppins",cursive;
+  letter-spacing: 0.3rem;
+}
+.school h1 {
+  padding-bottom: 3rem;
+  font-family: "poppins",cursive;
+  letter-spacing: 0.3rem;
+}
+.ug p, .inter p, .school p {
+  padding-bottom: 1rem;
+  line-height: 1.3rem;
+  font-family: "lato", arial;
+  font-style: italic;
+  letter-spacing: 0.2rem;
+  font-size: 1.2rem;
+}
+#work {
+  margin-bottom: 5rem;
+  text-align: center;
+}
+.work-items {
+  width: 80%;
+  margin: 7rem auto;
+  transform: translateY(-70%);
+  
+}
+.work-item {
+  margin: 1rem;
+}
+.work-title {
+  padding: 0.5rem;
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+  font-family: "Poppins", arial;
+  letter-spacing: 0.1rem;
+  transition: all 0.3s ease-in-out;
+}
+.work-title::after {
+  content: "\002B";
+  font-size: 1.2rem;
+  position: absolute;
+  right: 3rem;
+  color: black;
+  transition: all 0.3s ease-in-out;
+}
+.work-title.active::after {
+  transform: rotate(45deg);
+  color: var(--color-one);
+}
+.active {
+  color: var(--color-one);
+  font-weight: bold;
+}
+.work-body {
+  line-height: 1.5rem;
+  border-top: 1px solid;
+  border-image: linear-gradient(to right, transparent, black, transparent) 1;
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.2s ease-out;
+}
+.work-body-content {
+  padding: 1rem;
+  font-family: 'Trebuchet MS',sans-serif;
+  font-weight: bold;
+  font-size: 1.5rem;
+  text-align: start;
+}
+.work-body-content ul li {
+  list-style-position: inside;
+  list-style-type: disc;
+  font-weight: lighter;
+}
+.bg-text-hover {
+  opacity: 1;
+  color: var(--color-one);
+}
+.body-text-hover {
+  opacity: 0.2;
+}
+#contact {
+  margin-bottom: 2rem;
+}
+.contact-text {
+  padding: 1rem;
+  font-family: 'Montserrat', sans-serif;
+  font-style: italic;
+  color: var(--color-one);
+  font-size: 4rem;
+}
+.number, .mail {
+  font-size: 1.5rem;
+  font-family: monospace;
+  font-weight: bold;
+  line-height: 2rem;
+}
+@media (max-width: 1100px) {
+  #about, #skills, #work, #education, #contact {
+    font-size: 10px;
+  }
+  .job-title, .name {
+    font-size: 7rem;
+  }
+  .name {
+    transform: translate(150%, -70%);
+  }
+}
+@media (max-width: 800px) {
+  html {
+    font-size: 10px;
+  }
+  .nav-bar nav{
+    width: 100%;
+  }
+  #about, #skills, #work, #education{
+    font-size: 6px;
+  }
+  .contact-text {
+    font-size: 2rem;
+  }
+  .job-title, .name {
+    font-size: 6rem;
+  }
+ }
+ @media (max-width: 700px) {
+  html{
+    font-size: 10px;
+  }
+ }
+ @media (max-width: 500px) {
+   html {
+     font-size: 8px;
+   }
+ #about, #skills, #work, #education, #contact {
+     font-size: 6px;
+   }
+   .job-title {
+     font-size: 7rem;
+   }
+   #skills {
+     padding-top: 6rem;
+   }
+  .name {
+    transform: translate(10%, -70%);
+  }
+ }
+ @media (max-width: 400px){
+  #about, #skills, #work, #education, #contact {
+    font-size: 3px;
+  }
+  .job-title, .name {
+    font-size: 5.5rem;
+  }
+  .work-items{
+    margin-top: 13rem;
+  }
+ }
