@@ -139,10 +139,9 @@ body {
   align-items: center;
 }
 #skills {
-  font-size: 2rem;
-  transform: translateY(40%);
+  font-size: 1.3rem;
   transition: all 0.5s ease-in-out;
-  margin-bottom: 10rem;
+  margin: 10rem 0;
 }
 .about-me, .skill, .education, .work {
   font-family: 'Montserrat', sans-serif;
@@ -177,7 +176,6 @@ body {
   text-align: center;
   font-size: 2rem;
   text-transform: uppercase;
-  transform: translateY(-130%);
   margin-bottom: 2rem;
   letter-spacing: 0.5rem;
 }
@@ -187,7 +185,6 @@ body {
   font-weight: bold;
   text-align: center;
   font-size: 2rem;
-  transform: translateY(-100%);
   text-transform: uppercase;
   letter-spacing: 0.5rem;
   padding-top: 2rem;
@@ -236,13 +233,13 @@ body {
   color: #5DA271;
 }
 .education {
-  transform: translateY(80%);
+  transform: translateY(70%);
   transition: all 0.5s ease;
 }
 .education-details {
   display: flex;
   justify-content: center;
-  align-content: center;
+  align-content: baseline;
   width: 100%;
   transform: translateY(30%);
   transition: all 0.5s ease;
@@ -274,14 +271,14 @@ body {
 }
 .ug p, .inter p, .school p {
   padding-bottom: 1rem;
-  line-height: 1.3rem;
+  line-height: 1.5rem;
   font-family: "lato", arial;
   font-style: italic;
   letter-spacing: 0.2rem;
   font-size: 1.2rem;
 }
 #work {
-  margin-bottom: 5rem;
+  margin: 5rem;
   text-align: center;
 }
 .work-items {
@@ -321,7 +318,7 @@ body {
   font-weight: bold;
 }
 .work-body {
-  line-height: 1.5rem;
+  line-height: 2rem;
   border-top: 1px solid;
   border-image: linear-gradient(to right, transparent, black, transparent) 1;
   max-height: 0;
@@ -373,10 +370,27 @@ body {
   .name {
     transform: translate(150%, -70%);
   }
+  .education-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: start;
+    transform: translateY(5%);
+  }
+  .ug, .inter, .school {
+    width: 80%;
+    border-right: none;
+    border-image: none;
+    border-left: 4px solid black;
+    margin-bottom: 3rem;
+    padding: 0 0 0 1rem;
+  }
+  
 }
 @media (max-width: 800px) {
   html {
-    font-size: 10px;
+    font-size: 14px;
   }
   .nav-bar nav{
     width: 100%;
@@ -390,16 +404,22 @@ body {
   .job-title, .name {
     font-size: 6rem;
   }
+  .work {
+    transform: translateY(250%);
+  }
+  .work-items{
+    margin-top: 20rem;
+  }
  }
  @media (max-width: 700px) {
   html{
-    font-size: 10px;
+    font-size: 12px;
+  }
+  .work-items {
+    width: 100%;
   }
  }
- @media (max-width: 500px) {
-   html {
-     font-size: 8px;
-   }
+ @media (max-width: 600px) {
  #about, #skills, #work, #education, #contact {
      font-size: 6px;
    }
@@ -407,20 +427,24 @@ body {
      font-size: 7rem;
    }
    #skills {
-     padding-top: 6rem;
+     margin-top: 12rem;
    }
   .name {
     transform: translate(10%, -70%);
   }
+  .work {
+    transform: translateY(130%);
+  }
+
  }
  @media (max-width: 400px){
   #about, #skills, #work, #education, #contact {
-    font-size: 3px;
+    font-size: 4px;
   }
   .job-title, .name {
     font-size: 5.5rem;
   }
-  .work-items{
-    margin-top: 13rem;
+  .education {
+    transform: translateY(150%);
   }
  }
