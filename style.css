@@ -1,9 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Teko&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Teko:wght@300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Teko&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Teko:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -13,14 +13,14 @@ html {
   scroll-behavior: smooth;
 }
 :root {
-  --color-one: #C5283D;
+  --color-one: #c5283d;
 }
 body {
   overflow-x: hidden;
 }
 .intro {
   width: 100%;
- height: 30rem;
+  height: 30rem;
   display: flex;
   flex-direction: column;
   position: relative;
@@ -30,7 +30,7 @@ body {
   font-size: 10rem;
   opacity: 0.08;
   width: 80%;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-style: italic;
   transform: translate(10%, 10%);
   transition: all 0.5s ease-in-out;
@@ -40,7 +40,7 @@ body {
   font-size: 8rem;
   width: 30%;
   transform: translate(180%, -90%);
-  font-family: 'Josefin Sans', sans-serif;
+  font-family: "Josefin Sans", sans-serif;
   transition: all 0.5s ease-in-out;
 }
 .name span {
@@ -62,7 +62,7 @@ body {
 .nav-bar nav a {
   padding: 1rem;
   text-decoration: none;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 1.5rem;
   color: black;
   transition: all 0.5s ease;
@@ -83,7 +83,7 @@ body {
 .cv {
   background-color: black;
   color: white;
-  font-family: 'Teko', sans-serif;
+  font-family: "Teko", sans-serif;
   border: none;
   border-radius: 3px;
   outline: none;
@@ -107,13 +107,14 @@ body {
   cursor: pointer;
   transition: all 0.5s ease;
 }
-.more:hover, .cv:hover {
+.more:hover,
+.cv:hover {
   background-color: var(--color-one);
 }
 .top {
   display: none;
-  border:none;
-  outline:none;
+  border: none;
+  outline: none;
   background-color: black;
   color: white;
   padding: 0.5rem;
@@ -132,7 +133,11 @@ body {
   color: white;
   transition: all 0.5s ease;
 }
-#about, #skills, #education, #work, #contact{
+#about,
+#skills,
+#education,
+#work,
+#contact {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -143,8 +148,11 @@ body {
   transition: all 0.5s ease-in-out;
   margin: 10rem 0;
 }
-.about-me, .skill, .education, .work {
-  font-family: 'Montserrat', sans-serif;
+.about-me,
+.skill,
+.education,
+.work {
+  font-family: "Montserrat", sans-serif;
   opacity: 0.08;
   font-size: 12em;
   font-style: italic;
@@ -153,7 +161,7 @@ body {
   margin-top: 2rem;
 }
 .about-body {
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
   font-size: 1.5rem;
   width: 60%;
   padding-bottom: 2rem;
@@ -170,7 +178,7 @@ body {
   transition: all 0.5s ease-in-out;
 }
 .technical {
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
   font-weight: bold;
   width: 90%;
   text-align: center;
@@ -180,7 +188,7 @@ body {
   letter-spacing: 0.5rem;
 }
 .relevant {
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
   width: 90%;
   font-weight: bold;
   text-align: center;
@@ -191,20 +199,23 @@ body {
   border-top: 1px solid;
   border-image: linear-gradient(to right, transparent, black, transparent) 1;
 }
-.technical ul, .relevant ul {
+.technical ul,
+.relevant ul {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
   list-style-type: none;
   padding-top: 3rem;
 }
-.technical ul li, .relevant ul li{
+.technical ul li,
+.relevant ul li {
   font-size: 2rem;
-  font-family: 'Teko', sans-serif;
+  font-family: "Teko", sans-serif;
   font-weight: 300;
   letter-spacing: 0.2rem;
 }
-.technical ul li i, .relevant ul li i{
+.technical ul li i,
+.relevant ul li i {
   font-size: 4rem;
   padding-bottom: 2rem;
 }
@@ -224,13 +235,13 @@ body {
   color: #f0db4f;
 }
 #bug {
-  color: #691E06;
+  color: #691e06;
 }
 #mobile {
-  color: #C8C6AF;
+  color: #c8c6af;
 }
 #learn {
-  color: #5DA271;
+  color: #5da271;
 }
 .education {
   transform: translateY(70%);
@@ -244,32 +255,37 @@ body {
   transform: translateY(30%);
   transition: all 0.5s ease;
 }
-.ug, .inter, .school {
+.ug,
+.inter,
+.school {
   width: 33%;
   font-size: 0.7rem;
   text-transform: uppercase;
   padding: 1rem;
 }
-.ug, .inter {
+.ug,
+.inter {
   border-right: 1px solid;
   border-image: linear-gradient(to bottom, transparent, black, transparent) 1;
 }
 .ug h1 {
   padding-bottom: 2.5rem;
-  font-family: "poppins",cursive;
+  font-family: "poppins", cursive;
   letter-spacing: 0.3rem;
 }
 .inter h1 {
   padding-bottom: 2rem;
-  font-family: "poppins",cursive;
+  font-family: "poppins", cursive;
   letter-spacing: 0.3rem;
 }
 .school h1 {
   padding-bottom: 3rem;
-  font-family: "poppins",cursive;
+  font-family: "poppins", cursive;
   letter-spacing: 0.3rem;
 }
-.ug p, .inter p, .school p {
+.ug p,
+.inter p,
+.school p {
   padding-bottom: 1rem;
   line-height: 1.5rem;
   font-family: "lato", arial;
@@ -285,7 +301,6 @@ body {
   width: 80%;
   margin: 7rem auto;
   transform: translateY(-70%);
-  
 }
 .work-item {
   margin: 1rem;
@@ -327,7 +342,7 @@ body {
 }
 .work-body-content {
   padding: 1rem;
-  font-family: 'Trebuchet MS',sans-serif;
+  font-family: "Trebuchet MS", sans-serif;
   font-weight: bold;
   font-size: 1.5rem;
   text-align: start;
@@ -349,22 +364,28 @@ body {
 }
 .contact-text {
   padding: 1rem;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-style: italic;
   color: var(--color-one);
   font-size: 4rem;
 }
-.number, .mail {
+.number,
+.mail {
   font-size: 1.5rem;
   font-family: monospace;
   font-weight: bold;
   line-height: 2rem;
 }
 @media (max-width: 1100px) {
-  #about, #skills, #work, #education, #contact {
+  #about,
+  #skills,
+  #work,
+  #education,
+  #contact {
     font-size: 10px;
   }
-  .job-title, .name {
+  .job-title,
+  .name {
     font-size: 7rem;
   }
   .name {
@@ -378,7 +399,9 @@ body {
     text-align: start;
     transform: translateY(5%);
   }
-  .ug, .inter, .school {
+  .ug,
+  .inter,
+  .school {
     width: 80%;
     border-right: none;
     border-image: none;
@@ -386,84 +409,95 @@ body {
     margin-bottom: 3rem;
     padding: 0 0 0 1rem;
   }
-  
 }
 @media (max-width: 800px) {
   html {
     font-size: 14px;
   }
-  .nav-bar nav{
+  .nav-bar nav {
     width: 100%;
   }
-  #about, #skills, #work, #education{
+  #about,
+  #skills,
+  #work,
+  #education {
     font-size: 6px;
   }
   .contact-text {
     font-size: 2rem;
   }
-  .job-title, .name {
+  .job-title,
+  .name {
     font-size: 6rem;
   }
   .work {
     transform: translateY(250%);
   }
-  .work-items{
+  .work-items {
     margin-top: 20rem;
   }
- }
- @media (max-width: 700px) {
-  html{
+}
+@media (max-width: 700px) {
+  html {
     font-size: 12px;
   }
   .work-items {
     width: 100%;
   }
- }
- @media (max-width: 600px) {
- #about, #skills, #work, #education, #contact {
-     font-size: 6px;
-   }
-   .job-title {
-     font-size: 7rem;
-   }
-   #skills {
-     margin-top: 12rem;
-   }
+}
+@media (max-width: 600px) {
+  #about,
+  #skills,
+  #work,
+  #education,
+  #contact {
+    font-size: 6px;
+  }
+  .job-title {
+    font-size: 7rem;
+  }
+  #skills {
+    margin-top: 12rem;
+  }
   .name {
     transform: translate(10%, -90%);
   }
   .work {
     transform: translateY(130%);
   }
-
- }
- @media (max-width: 500px) {
-   html {
-     font-size: 10px;
+}
+@media (max-width: 500px) {
+  html {
+    font-size: 10px;
   }
-    .job-title, .name {
-      font-size: 5.5rem;
-    }
-    .name {
-      transform: translate(10%, -70%);
-    }
-    .about-body {
-      width: 80%;
-    }
-    .buttons{
-      display: flex;
-      flex-direction: column;
-      margin-top: 3rem;
-      align-items: center;
-      justify-content: center;
-    }
-    .cv {
-      margin-bottom: 2rem;
-      margin-right: 0;
-    }
- }
- @media (max-width: 400px){
-  #about, #skills, #work, #education, #contact {
+  .job-title,
+  .name {
+    font-size: 5.5rem;
+  }
+  .name {
+    transform: translate(10%, -70%);
+  }
+  .about-body {
+    width: 80%;
+  }
+  .buttons {
+    display: flex;
+    flex-direction: column;
+    margin-top: 3rem;
+    align-items: center;
+    justify-content: center;
+  }
+  .cv {
+    margin-bottom: 2rem;
+    margin-right: 0;
+  }
+}
+@media (max-width: 400px) {
+  #about,
+  #skills,
+  #work,
+  #education,
+  #contact {
     font-size: 4px;
   }
- }
+}
