@@ -354,7 +354,6 @@ body {
 }
 .cb-site, .cb-code {
   margin: 2rem 2rem 0 0;
-  background-color: white;
   border: 1px solid black;
   padding: 1rem;
   color: var(--color-one);
