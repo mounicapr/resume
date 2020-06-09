@@ -352,6 +352,23 @@ body {
   list-style-type: disc;
   font-weight: lighter;
 }
+.cb-site, .cb-code {
+  margin: 2rem 2rem 0 0;
+  background-color: white;
+  border: 1px solid black;
+  padding: 1rem;
+  color: var(--color-one);
+  font-family: "lato", arial;
+  font-weight: bold;
+  outline: none;
+  transition: all 0.5s ease;
+  letter-spacing: 0.2rem;
+  cursor: pointer;
+}
+.cb-site:hover, .cb-code:hover {
+  background-color: black;
+  color: white;
+}
 .bg-text-hover {
   opacity: 1;
   color: var(--color-one);
